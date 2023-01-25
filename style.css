@@ -1,0 +1,123 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  min-height: 60px;
+}
+
+body {
+  text-align: center;
+  margin: 20px;
+}
+
+.wordle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+}
+
+.wordle label,
+input,
+button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.letters,
+.check__input {
+  border: 2px solid black;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.entered__word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solo__word {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+/* .entered__word li {
+  padding: 0 10px;
+  font-size: large;
+} */
+
+.error {
+  position: relative;
+  top: 10%;
+  border: 2px solid black;
+  font-size: large;
+  padding: 20px;
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}
+
+.green {
+  background-color: #6aaa64;
+  min-width: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.orange {
+  background-color: #c9b458;
+  min-width: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.grey {
+  background-color: #787c7e;
+  min-width: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2px;
+}
+
+.split {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  font-size: 30px;
+  text-align: center;
+}
+/* .split {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-image: linear-gradient(
+    to left,
+    black 70%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 220px;
+  outline: none;
+} */

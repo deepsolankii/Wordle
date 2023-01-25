@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"
+    ></script>
+    <script type="module" defer src="./client.js"></script>
+    <title>Wordle</title>
+  </head>
+  <body>
+    <h1>Play Wordle</h1>
+    <h2>Remaining Lives: <span class="lives">6</span></h2>
+    <!-- <div class="row" id="row1">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div>
+    <div class="row" id="row2">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div>
+    <div class="row" id="row3">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div>
+    <div class="row" id="row4">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div>
+    <div class="row" id="row5">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div>
+    <div class="row" id="row6">
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+      <div class="split"></div>
+    </div> -->
+    <button class="submit" type="submit">Reset</button>
+    <form class="wordle">
+      <div class="error hide">
+        <p>Please Enter a Valid Word</p>
+      </div>
+      <label for="word">Enter Your Word</label>
+      <input
+        type="text"
+        id="word"
+        minlength="5"
+        maxlength="5"
+        style="text-transform: uppercase"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="check__input">
+      <h3>Entered Words</h3>
+      <div class="entered__word"></div>
+    </div>
+    <!-- <div class="letters">
+      <p>Used letters</p>
+    </div> -->
+  </body>
+</html>

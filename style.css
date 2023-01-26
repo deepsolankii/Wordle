@@ -4,9 +4,15 @@
 
 h1 {
   text-align: center;
-  margin: 20px;
-  padding: 20px;
-  min-height: 60px;
+  margin: 10px;
+  min-height: 40px;
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -25,10 +31,9 @@ body {
 }
 
 .wordle label,
-input,
 button {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .letters,
@@ -57,12 +62,16 @@ button {
 } */
 
 .error {
-  position: relative;
-  top: 10%;
+  position: fixed;
+  margin: auto;
+  width: 200px;
+  align-items: center;
+  top: 30%;
+  left: 25%;
   border: 2px solid black;
   font-size: large;
   padding: 20px;
-  background-color: red;
+  color: red;
 }
 
 .hide {
@@ -70,24 +79,15 @@ button {
 }
 
 .green {
-  background-color: #6aaa64;
-  min-width: 20px;
-  padding: 10px;
-  margin: 10px;
+  background-color: rgb(106, 170, 100);
 }
 
 .orange {
-  background-color: #c9b458;
-  min-width: 20px;
-  padding: 10px;
-  margin: 10px;
+  background-color: rgb(201, 180, 88);
 }
 
 .grey {
-  background-color: #787c7e;
-  min-width: 20px;
-  padding: 10px;
-  margin: 10px;
+  background-color: rgb(120, 124, 126);
 }
 
 .row {
@@ -101,23 +101,30 @@ button {
   border: 1px solid black;
   width: 40px;
   height: 40px;
-  margin: 2px;
+  margin: 3px;
   font-size: 30px;
   text-align: center;
+  color: black;
 }
-/* .split {
-  padding-left: 15px;
-  letter-spacing: 42px;
-  border: 0;
-  background-image: linear-gradient(
-    to left,
-    black 70%,
-    rgba(255, 255, 255, 0) 0%
-  );
-  background-position: bottom;
-  background-size: 50px 1px;
-  background-repeat: repeat-x;
-  background-position-x: 35px;
-  width: 220px;
-  outline: none;
-} */
+
+.board {
+  width: 60%;
+  margin: auto;
+}
+
+.box {
+  margin: 20px 0;
+}
+
+.letters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
+}
+
+.letters .split {
+  margin: 3px 10px;
+  padding: 5px;
+}

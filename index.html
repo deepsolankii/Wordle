@@ -10,74 +10,72 @@
       href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css"
     />
     <script
-      async
+      defer
       src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"
     ></script>
+    <script async src="//www.thefreedictionary.com/dict.js"></script>
     <script
       async
       src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"
     ></script>
-    <script defer type="module" src="./wordGenerator.js"></script>
-    <script type="module" defer src="./client.js"></script>
+    <script defer src="./client.js"></script>
     <title>Wordle</title>
   </head>
-  <body>
+  <body tabindex="1">
     <h1>Play Wordle</h1>
-    <h2>Remaining Lives: <span class="lives">6</span></h2>
-    <button class="refresh" type="submit">Reset</button>
-    <!-- <div class="letters">
-      <div class="split">4</div>
-      <div class="split active">5</div>
-      <div class="split">6</div>
-      <div class="split">7</div>
+    <div class="mode">
+      <input type="radio" name="mode" id="light" value="light" />
+      <label for="light">Light</label>
+      <input type="radio" name="mode" id="dark" value="dark" />
+      <label for="dark">Dark</label>
+    </div>
+    <div class="game-stats">
+      <div>
+        Games Played :&ensp;
+        <span class="game-played"></span>
+      </div>
+      <div>
+        Games Won :&ensp;
+        <span class="game-won"></span>
+      </div>
+      <div>
+        Win(%) :&ensp;
+        <span class="win-percent"></span>
+      </div>
+    </div>
+    <!-- <h2>Remaining Lives: <span class="lives">6</span></h2> -->
+    <!-- <button class="refresh" type="submit">Reset</button> -->
+    <div class="letters">
+      <div class="num-split" tabindex="0">4</div>
+      <div class="num-split">5</div>
+      <div class="num-split">6</div>
+      <div class="num-split">7</div>
+    </div>
+    <!-- <div class="error hide">
+      <p>Please Enter a Valid Word</p>
     </div> -->
-    <div class="error hide">
-      <p>Please Enter a Valid 5 letter Word</p>
-    </div>
-    <div class="box">
-      <div class="row" id="1">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-      </div>
-      <div class="row" id="2">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-      </div>
-      <div class="row" id="3">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-      </div>
-      <div class="row" id="4">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-      </div>
-      <div class="row" id="5">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-      </div>
-      <div class="row" id="6">
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
-        <div class="split"></div>
+    <div class="hide modal">
+      <button class="close-modal">&times;</button>
+      <div class="definition">
+        <div class="example-row">
+          <!-- <div class="part-of-speech">
+          1234567
+          <p>(aaa)</p>
+        </div>
+        <div class="example">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            voluptatum perferendis doloremque a numquam molestias veritatis
+            nihil dolore, aut cumque? Nobis, tempore totam voluptatibus veniam
+            voluptates nisi quae accusamus eveniet?
+          </p>
+          <p>b</p>
+        </div> -->
+        </div>
       </div>
     </div>
+    <div class="box"></div>
+    <div class="hide overlay"></div>
     <div class="board">
       <div class="simple-keyboard board"></div>
     </div>

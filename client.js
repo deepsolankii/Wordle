@@ -101,8 +101,8 @@ const randomWord = (num) => {
       words_all = data[num];
       const totalWords = words_all.length;
       const randInt = Math.floor(Math.random() * totalWords);
-      // correctWord = words_all[randInt].toUpperCase();
-      correctWord = "SNAIL";
+      correctWord = words_all[randInt].toUpperCase();
+      // correctWord = "SNAIL";
       wordArray = [...correctWord];
       console.log(correctWord);
     });

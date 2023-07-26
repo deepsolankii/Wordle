@@ -1,5 +1,3 @@
-const SEARCHAPI = "AIzaSyCfiFwdTf2oD7Ao5gIEh-DXdRdVRRyeDws";
-const CX = "406c32f63bcf04813";
 let lives;
 let row = 0;
 let column = 0;
